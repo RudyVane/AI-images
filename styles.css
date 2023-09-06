@@ -1,0 +1,168 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+	background: linear-gradient(to right, red -25%, yellow 75%, blue);
+}
+button {
+	color: blue;
+	background-color: yellow;
+	border-color: yellow;
+	border-radius: 10%;
+	width: 10vw;
+    height: 2.5vw;
+    font-size: 1.5vw;
+}
+h1 {
+	color: blue;
+}
+h3 {
+	color: blue;
+}
+p {
+	color: blue;
+}
+/* Style the checkbox container */
+.checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Adjust alignment as needed */
+    margin-bottom: 5px; /* Add some margin for spacing */
+}
+
+/* Style individual checkbox items */
+.checkbox-item {
+    display: flex;
+    align-items: center; /* Align checkboxes and labels vertically */
+    margin-right: 10px; /* Adjust spacing between checkboxes */
+}
+
+/* Style the checkbox input */
+.checkbox-item input[type="checkbox"] {
+    margin-right: 2px; /* Add spacing between checkbox and label */
+}
+
+/* Style the label text for the checkbox */
+.checkbox-item label {
+    font-size: 1,5vw; /* Adjust font size */
+}
+
+/* Style the text associated with checkboxes */
+.checkbox-text {
+    font-size: 1.5vw; /* Adjust font size */
+    margin-left: 10px; /* Add spacing between checkbox and text */
+}
+
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-item {
+    margin: 10px;
+    display: block;
+}
+
+.image-item img {
+    max-width: 100px;
+    max-height: 100px;
+    cursor: pointer;
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.popup img {
+    max-width: 100%;
+    max-height: 80vh;
+}
+/* Dropdown Styles */
+.custom-select {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.select-selected {
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.select-selected:hover {
+    background-color: #ddd;
+}
+
+.select-items {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.select-items div {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+  /* Add media query for screens smaller than 768px */
+        @media (max-width: 768px) {
+            /* Adjust styles for smaller screens */
+            .checkbox-container {
+                /* Modify styles for the checkbox container */
+                justify-content: left;
+            }
+button {
+	color: blue;
+	background-color: yellow;
+	border-color: yellow;
+	border-radius: 10%;
+	width: 17vw;
+    height: 10vw;
+    font-size: 3.5vw;
+}
+   h1 {
+	color: blue;
+	font-size: 4vw;
+	margin-top:15vw;
+}
+h3 {
+	color: blue;
+	font-size: 3.5vw;
+}
+p {
+	color: blue;
+	font-size: 3.2vw;
+}         
+
+            /* Show content by default on smaller screens */
+            #content {
+                display: block;
+            }
+        }
+
